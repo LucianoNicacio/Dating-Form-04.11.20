@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Please Enter Your Details For Our Dating Website!</h1>
+  <form class="survey-form" action="https://learn.nucamp.co/show_everything.php" method="post" enctype="multipart/form-data"></form>
+<form>
+<fieldset>
+  <legend>Your Face</legend>
+  <div>
+  <label for="avatar">Upload Your Image:</label>
+  <input type="file" id="avatar" name="avatar" required>
+</div>
+  
+  <label for="preview">Image Preview:</label>
+  <img id="preview" width="500" name="preview" src="">
+</fieldset>
+<fieldset>
+  <legend>Your Details</legend>
+  <div>
+  <label for="name">Name:</label>
+  <input type="text" name="name" placeholder="Your Full Name"/>
+  </div>
+  
+  <div>
+  <label for="gender" class="radio-check">
+    Gender:
+  </label>
+  <input type="radio" id="woman" name="gender" value="woman">Woman
+  <input type="radio" id="man" name="gender" value="man">Man
+  </div>
+  
+  <div>
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" value="">
+</div>
+  
+  <div></div>
+  <label for="dob">Date of birth:</label>
+  <input type="date" name="dob">
+</div>
+  
+  <div>
+  <label for="color">Favorite Color:</label>
+  <input type="color" id="color" name="color">
+</div>
+  
+  <div>
+  <label for="country">Country:</label>
+  <select name="country" id="country" name="country">
+    <option> Choose a country</option>
+  <option value="Brazil">Brazil</option>
+  <option value="France">France</option>
+  <option value="Japan">Japan</option>
+  <option value="Libya">Libya</option>
+    <option value="usa">U.S.A</option>
+  </div>
+    
+  </select>
+
+  
+  <div>
+    <label for="salary">Salary:</label>
+  <span class="range-caption">Poor</span>
+  <input type="range" id="salary" name="salary" min="0" max="100" value="50"/>
+  <span class="range-caption">Rich</span>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Your Contact Information</legend>
+  <div>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+</div>
+  
+  <div>
+  <label for="phone">Phone:</label>
+  <input type="tel" name="phone">
+</div>
+  
+  <div>
+  <label for="address">Address:</label>
+  <textarea name="address"></textarea>
+</div>
+  
+  <div>
+  <label for="method" class="radio-check">
+    Contact method(s):
+  </label>
+  <input type="checkbox" name="contact" id="emailCheckbox" value="email">Email
+  <label for="emailCheckbox">Email</label>
+  <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">Phone call
+  <label for="phoneCheckbox">Phone</label>
+  </div>
+</fieldset>
+<div>
+<input type="submit">
+</div>
+</form>
+<script src="https://url.nucamp.co/datingjs"></script
+</body>
+</html>
